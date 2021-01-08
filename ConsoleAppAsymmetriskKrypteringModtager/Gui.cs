@@ -31,5 +31,14 @@ $$ | $$ | $$ |\$$$$$$$\ $$ |  $$ |\$$$$$$  |
                 numbering++;
             }
         }
+
+        public void PrintKeyData(string tagName, string Data)
+        {
+            Console.WriteLine("----------------------------------------------------------------------------------------");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine(tagName + ":\n" + Data);
+            Console.ResetColor();
+            Console.WriteLine("----------------------------------------------------------------------------------------");
+        }
     }
 }
